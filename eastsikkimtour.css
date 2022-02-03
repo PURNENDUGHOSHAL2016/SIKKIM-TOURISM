@@ -1,0 +1,75 @@
+.topbanner {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("cholamu-lake(1).jpg");
+    background-size: cover;
+    color: rgb(255, 130, 47);
+}
+
+.headbody {
+    font-size: 90px;
+    font-weight: 5000;
+    font-family: SFProDisplay-Bold;
+}
+
+.textbody {
+    text-align: justify;
+    font-weight: 0;
+    font-size: 0px;
+    font-family: Sans-serif;
+}
+
+.about {
+    float: right;
+}
+
+.fullbody {
+    font-size: 17px;
+    font-weight: 400;
+    color: #383636;
+    line-height: 1.7;
+    text-align: justify;
+    font-family: Sans-serif;
+}
+
+.secondbody {
+    font-size: 17px;
+    font-weight: 400;
+    color: #383636;
+    line-height: 1.7;
+    text-align: justify;
+    font-family: Sans-serif;
+}
+
+.headsecondbody {
+    font-size: 24px;
+    color: #252323;
+    font-weight: 600;
+    font-family: SFProDisplay-Bold;
+}
+
+.secondbody img {
+    float: left;
+    padding-right: 15px;
+}
+
+.form {
+    width: 300px;
+    background-color: rgb(0, 255, 255, 0.3);
+    text-align: center;
+    margin-top: 50%;
+}
+
+.end {
+    text-align: center;
+    color: #333;
+}
+
+.right {
+    float: right;
+}
+
+.video {
+    margin-top: 20%;
+}

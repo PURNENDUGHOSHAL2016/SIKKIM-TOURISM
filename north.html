@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> North Sikim </title>
+    <link rel="stylesheet" href="bootstrap-1.css">
+	
+	<style>
+		
+			.banner h1{
+			color:rgb(290, 140, 180);
+			font-size: 50px;
+			font-weight: 600;
+			text-align: center;
+			border: 3px solid rgb(255, 196, 0);
+			}
+			
+			.banner{
+			background-image: url("https://www.sstoursandtravel.com/admin/include/upload/packages/related6059ca70a14b4asdfsadfasdf.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+			padding-top: 100px;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-bottom:90px;
+			}
+			
+			.body1{
+			font-size:17px;
+			font-weight:10px;
+			text-align:justify;
+			}
+			
+			.header1 p{
+			font-size:25px;
+			font-weight:200;
+			text-decoration: underline;
+			color:#80000;
+			}
+			
+			.img-fluid{
+			height:350px;
+			width:600px
+			}
+			
+			.image{
+			margin-top:10px;
+			margin-bottom:15px;
+			}
+			
+			.img-col{
+			background-color: #eeeeee;
+			padding-right:20px;
+			}
+			
+			.img-col span{
+			color: #FF69B4;
+			font-size: 17px;
+			font-weight: 600;
+			}
+			
+			.header2{
+			color:rgb(209, 20, 107);
+			font-size: 30px;
+			font-weight:600;
+			text-align: center;
+			}
+			
+			.location{
+			color: #800000;
+			}
+			
+			.form {
+            width: 300px;
+            background-color: rgb(0, 255, 255, 0.3);
+            text-align: center;
+			}
+			
+			.heading{
+			font-family:inherit;
+			font-weight:600;
+			}
+			
+			.sp{
+			color:6600CC;
+			font-weight:1000;
+			}
+			
+			.about{
+			font-size:30px;
+			font-weight:500;
+			font-family:inherit;
+			color:#8000ff;
+			text-align:center;
+			}
+			
+			.body{
+			font-size:50px;
+			font-weight:400;
+			text-align:center;
+			padding-bottom:15px;
+			font-style:arial;
+			}
+		</style>
+		
+		<script>
+        function registrationfrom() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("number").value;
+            var enquiry = document.getElementById("enquiry").value;
+
+            if (name.length < 1) {
+                alert("Enter your Full name.");
+                document.getElementById("name").focus();
+                return false;
+            } else {
+                if (email.length < 1) {
+                    alert("Enter your Email Address.");
+                    document.getElementById("email").focus();
+                    return false;
+                } else {
+                    if (mobile.length < 1) {
+                        alert("Enter your mobile number.");
+                        document.getElementById("number").focus();
+                        return false;
+                    } else {
+                        if (enquiry.length < 1) {
+                            alert("Enter your details enquiry.");
+                            document.getElementById("enquiry").focus();
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+   
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpeg" alt="" width="36" height="30">
+              </a>
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Explore Sikim
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="eastsikkim.html">East Sikim</a></li>
+                  <li><a class="dropdown-item" href="westsikkim.html">West Sikim</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="north.html">North Sikim</a></li>
+                  <li><a class="dropdown-item" href="south.html">South Sikim</a></li>
+                </ul>
+              </li>
+
+
+
+
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="gallery.html">Gallery</a>
+              </li>
+
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="templet.html">
+                 Other-Packages 
+                </a>
+            </li>
+
+            </ul>
+
+              <div class="mx-2">
+                <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <a class="btn btn-danger" href="sign-up.html" role="button">Sign-Up</a>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+<div class="container">
+            <div class="banner">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+						<h1>North Sikim Tour</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	<div class="container">
+            <div class="header1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	<div class="container">
+		<div class="body1">
+            <div class="row">
+                <div class="col-md-6">
+                    North Sikkim Tour is the most beautiful excursion of Nature, especially, the exploration of the eastern mountain range of the Great Himalaya. One of the most breathtaking landscapes in India, the region of the Northern part of the Sikkim state is the marvel of Nature of the Earth. The pristine view of the white snowy mountain tops, vivacious waterfalls, bustling rivers, majestic lakes and the vivid flora and fauna have the capacity to spellbind its visitors with its spectacular Natural untouched beauty. The North Sikkim Tourism attracts tourists of various interests like Nature-loving explorers, Adventure-seeking enthusiasts, romantic honeymoon couples, religious travelers or others.Our North Sikkim tour package is an excellently planned itinerary to cover all the tourist destinations of the North region of Sikkim. Our 06 Nights / 07 Days North Sikkim tour package starts from receiving you at the Bagdogra Airport or the Siliguri Railway Station and taken directly to the Gangtok. After the extensive excursion of the tourist destinations like Gangtok, Lachen, Gurudongmar Lake, Lachung, Yumthang Valley, etc., you will be dropped back to the above Airport or Railway Station for your journey back to home. The North Sikkim Tourism of the 7 days will be a memorable experience for life. The flawless unblemished pristine beauty of North Sikkim will really refresh your weary mind and body.<br><br>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid" src="https://storage.ning.com/topology/rest/1.0/file/get/9009457270?profile=original">
+					<span class="sp">Gurudongmar Lake</span>
+                </div>
+            </div>
+		</div>
+    </div>
+	
+	<div class="container">
+		<div class="header2">
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						****----Pictures From Our Users----****<br><br>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+			<div class="image">
+				<div class="row">
+					<div class="col-md-4 img-col text-center">
+						<img class="img-fluid" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/dw77j4wmz4guf0krjqnonvrfi6qf_Sikkim.png">
+						<span>Road to North Sikkim</span>
+					</div>
+					<div class="col-md-4 img-col text-center">
+						<img class="img-fluid" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/m157akslj58uf7mktt1ygg3yb6js_Gurudongmar-Lake.jpeg">
+						<span>Majestic Gurudongmar Lake</span>
+					</div>
+					<div class="col-md-4 img-col text-center">
+						<img class="img-fluid" style="width:375px;" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/gmo716hqrloqy1xicw9pk7vjjtr4_sik_Tsomsgo%20yak.jpg">
+						<span>Yak near Tsomgo lake</span>
+					</div>
+					<div class="col-md-4 img-col text-center">
+						<img class="img-fluid" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/adeztq037vxno6jvpnk6ur7tajd2_ski-lachungwalk.jpg">
+						<span>Winter in Lachung</span>
+					</div>
+					<div class="col-md-4 img-col text-center">
+						<img class="img-fluid" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/hh1qsvxfslis94ulbk72lkxbzm6j_Nathu-La-Pass-The-Ancient-Heart-of-Sikkim-Image-1.png">
+						<span>Bells of Baba Mandir</span>
+					</div>
+					<div class="col-md-4 img-col text-center">
+						<img class="img-fluid" src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/4h77ot9h11da5urk6e7cqoes2qce_LRM_EXPORT_20180310_150616.png" style="width:375px;">
+						<span>Thangu Village</span>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 location">
+				<h2>Location</h2>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" style="padding-top: 20px; padding-bottom:60px ;
+">
+  <div class="row" >
+    <div class="col-md-8 text-center" style=" font-weight: 900; background-color: rgba(137, 182, 255, 0.178);
+        ">
+                <p class="" style="padding-top: 100px;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904044.2023118065!2d87.94706940755363!3d27.735106525719548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6bf0a08497891%3A0x7d2181d3e4eba146!2sNorth%20Sikkim%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1643732259233!5m2!1sen!2sin" width="100%" height="300px" style="border:0; padding-bottom:20px; allowfullscreen="" loading="lazy"></iframe>
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center" style="font-weight: 900;
+        ">
+                <div class="form" style=" width: 300px;background-color: rgb(0, 255, 255, 0.3);
+                text-align: center; padding-bottom: 30px;">
+                    <b>
+                    <h1><u>Enquiry Form</u></h1>
+                    <form name="myform" id="registrationform" autocomplete="off" onsubmit="return registrationfrom();">
+                        <input type="text" id="name" placeholder="Name"><br><br>
+                        <input type="email" id="email" placeholder="Email"><br><br>
+                        <input type="text" id="number" maxlength="10" placeholder="Mobile"><br><br>
+                        <textarea type="text" id="enquiry" rows="5" placeholder="Post your query"></textarea><br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type ="submit" class = "btn btn-primary">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    </b>
+                </div>
+            </div>
+            
+
+            
+
+  </div>
+
+
+</div>
+	
+	<div class="container">
+		<div class="row boottable">
+			<div class="col-md-12">
+				<table class="table table-bordered table-hover">
+					<h3 class="heading">North Sikkim Tour Package Price</h3>
+					
+					<thead>
+						<tr>
+							<th>Sl.No</th>
+							<th>Number Of Persons</th>
+							<th>Standard Package Cost</th>
+							<th>Deluxe Package Cost</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td><b>1</b></td>
+							<td>2 Persons</td>
+							<td>INR 64044</td>
+							<td>INR 68580</td>
+						</tr>
+						
+						<tr>
+							<td><b>2</b></td>
+							<td>3 Persons</td>
+							<td>INR 70956</td>
+							<td>INR 77436</td>
+						</tr>
+						
+						<tr>
+							<td><b>3</b></td>
+							<td>4 Persons</td>
+							<td>INR 84348</td>
+							<td>INR 93420</td>
+						</tr>
+						
+						<tr>
+							<td><b>4</b></td>
+							<td>5 Persons</td>
+							<td>INR 91260</td>
+							<td>INR 102276</td>
+						</tr>
+						
+						<tr>
+							<td><b>5</b></td>
+							<td>6 Persons</td>
+							<td>INR 103572</td>
+							<td>INR 117180</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 about">
+			Sikkim Travel Information at a Glance
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 body2">
+				Here you can find the reliable information on how to plan hassle holiday plant to Sikkim. Sikkim Tourism India put together for tourists relevant details like how to reach Sikkim, best time to visit along with complete information on different means of transportation. You can also explore here the different tourist attractions and spots in Sikkim with the help of our navigation map.
+			</div>
+		</div>
+	</div>
+
+
+    
+            
+            
+            
+            
+            
+            
+                  <footer class="page-footer font-small unique-color-dark bg-dark">
+            
+                    <div style="background-color: #6351ce;">
+                      <div class="container">
+                  
+                        <div class="row py-4 d-flex align-items-center">
+                  
+                          
+                          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0">Get connected with us on social networks!</h6>
+                          </div>
+                        
+                          
+                          <div class="col-md-6 col-lg-7 text-center text-md-right">
+                  
+                          </div>      
+                  
+                        </div>
+                  
+                      </div>
+                    </div>
+                  
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+                  
+                      <!-- Grid row -->
+                      <div class="row mt-3">
+                  
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-primary">
+                  
+                          <!-- Content -->
+                          <h6 class="text-uppercase font-weight-bold" style="font-weight: 900; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                          ">Sikkim</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipisicing elit.</p>
+                  
+                        </div>
+                       
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                         
+                          <h6 class="text-uppercase font-weight-bold">Products</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                          <p>
+                            <a href="https://www.facebook.com/">
+                                <img src="facebook.jpg.png" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://www.instagram.com/">
+                                <img src="instagram.jpg" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://twitter.com/">
+                                <img src="twitter.jpg" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://www.linkedin.com/">
+                                <img src="linkedin.jpg" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                  
+                        </div>
+                        
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                          <p>
+                            <a href="https://facebook.com">Your Tour</a>
+                          </p>
+                          
+                          <p>
+                            <a href="#!">Tour Rates</a>
+                          </p>
+                          <p>
+                            <a href="#!">Help</a>
+                          </p>
+                  
+                        </div>
+                       
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-success">
+                  
+                         
+                          <h6 class="text-uppercase " style="font-weight: 900; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                          ">Contact-Us</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;
+                          ">
+                          <p>
+                            <i class="fas fa-home mr-3"></i> 742 Evergreen Terrace (The Simpsons) 16 7.
+                        </p>
+                          <p>
+                            <i class="fas fa-envelope mr-3"></i>245 East 73rd Street (Six and the City) 4 4. ...
+                        </p>
+                          <p>
+                            <i class="fas fa-phone mr-3"></i> + 91 234 567 88</p>
+                          <p>
+                            <i class="fas fa-print mr-3"></i> + 91 234 567 89</p>
+                  
+                        </div>
+                       
+                  
+                      </div>
+                   
+                  
+                    </div>
+                    <!-- Footer Links -->
+                  
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright : 
+                      <a href="https://Sikim.com"> https://Sikkim.com</a>
+                    </div>
+                    <!-- Copyright -->
+                  
+                  </footer>
+            
+            
+            
+            
+                  
+                <!-- Optional JavaScript; choose one of the two! -->
+            
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                -->
+                <script src="js/bootstrap.min.js"></script>
+              </body>
+            </html>

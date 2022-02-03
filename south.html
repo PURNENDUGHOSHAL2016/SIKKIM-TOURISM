@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> South Sikim </title>
+    <link rel="stylesheet" href="bootstrap-1.css">
+	
+	<style>
+		.banner h1{
+		color:rgb(172, 40, 40 );
+		font-size: 50px;
+		font-weight: 600;
+		text-align: center;
+		border: 4px solid rgb(241, 234, 234);
+		}
+		
+		.banner{
+		background-image: url("https://holidayinfy.com/wp-content/uploads/2020/07/4-Famous-South-Sikkim-tourist-place.jpg");
+		padding-top: 120px;
+		padding-left: 100px;
+		padding-right:100px;
+		padding-bottom:168px;
+		border-top-color:#FFBF00;
+		}
+		
+		.heading{
+		font-style:inherit;
+		font-size:25px;
+		font-weight:30px;
+		text-decoration: underline;
+		color:#80000;
+		padding-left:10px;
+		}
+		
+		.body1{
+		font-size:17px;
+		font-weight:10px;
+		text-align:justify;
+		}
+		
+		.form {
+        width: 300px;
+        background-color: rgb(0, 255, 255, 0.3);
+        text-align: center;
+		}
+		
+		.header1{
+		font-size:25px;
+		font-weight:100px;
+		}
+		
+		.body2{
+		font-size:17px;
+		font-weight:10px;
+		text-align:justify;
+		}
+		
+		.img-fluid{
+		background-color: #eeeeee;
+		padding-right:20px;
+		padding-bottom:15px;
+		}
+		
+		.header2{
+		font-size:25px;
+		font-weight:100px;
+		}
+		
+		.body3{
+		font-size:17px;
+		font-weight:10px;
+		text-align:justify;
+		}
+		
+		.header3{
+		font-size:25px;
+		font-weight:100px;
+		}
+		
+		.body4{
+		font-size:17px;
+		font-weight:10px;
+		text-align:justify;
+		}
+		
+		.img-fluid1{
+		background-color: #eeeeee;
+		padding-right:20px;
+		padding-bottom:15px;
+		}
+		
+		.about{
+		font-size:30px;
+		font-weight:500;
+		font-family:inherit;
+		color:#8000ff;
+		text-align:center;
+		}
+		
+		.body5{
+		font-size:17px;
+		font-weight:10px;
+		text-align:center;
+		}
+	</style>
+	<script>
+		function registrationfrom() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("number").value;
+            var enquiry = document.getElementById("enquiry").value;
+
+            if (name.length < 1) {
+                alert("Enter your Full name.");
+                document.getElementById("name").focus();
+                return false;
+            } else {
+                if (email.length < 1) {
+                    alert("Enter your Email Address.");
+                    document.getElementById("email").focus();
+                    return false;
+                } else {
+                    if (mobile.length < 1) {
+                        alert("Enter your mobile number.");
+                        document.getElementById("number").focus();
+                        return false;
+                    } else {
+                        if (enquiry.length < 1) {
+                            alert("Enter your details enquiry.");
+                            document.getElementById("enquiry").focus();
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+	</script>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpeg" alt="" width="36" height="30">
+              </a>
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Explore Sikim
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="eastsikkim.html">East Sikim</a></li>
+                  <li><a class="dropdown-item" href="westsikkim.html">West Sikim</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="north.html">North Sikim</a></li>
+                  <li><a class="dropdown-item" href="south.html">South Sikim</a></li>
+                </ul>
+              </li>
+
+
+
+
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="gallery.html">Gallery</a>
+              </li>
+
+
+
+
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="templet.html">Other-Packages</a>
+              </li>
+
+            </ul>
+
+              <div class="mx-2">
+                <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <a class="btn btn-danger" href="sign-up.html" role="button">Sign-Up</a>
+              </div>
+          </div>
+        </div>
+      </nav>
+	  
+	 <div class="container">
+            <div class="banner">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+						<h1>South Sikim Tour</h1>
+                    </div>
+                </div>
+            </div>
+    </div>
+	
+	<div class="container">
+		<div class="row">
+            <div class="col-md-12">
+                 <p class="heading"><b>Description</b></p>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container">
+  <div class="row" >
+    <div class="col-md-8">
+                <p class="body1" style="padding-bottom : 50px">
+                 The mesmerizing scenic beauty and captivating tranquility of the Sikkim attract tourists from all over the world. Surrounded by the pristine snow-capped mountaintops and dense green forest, the southern region of Sikkim offers you to spend your holiday amidst the picturesque landscape. Whether you are on your honeymoon tour or looking for a gateway for the closeness to nature or a relaxing and peaceful hideout from the city life, the south Sikkim has everything to make your trip a memorable one. If you are a nature lover and looking for a retreat in nature’s paradise, then various locations in the south Sikkim can be your perfect holiday spot.<br><br>
+				 Though the South Sikkim is not as popular tourist place as the North Sikkim but this smaller district of the Sikkim has amazing potential to attract tourists with diverse interests – be it nature-loving tourists or religious and spiritual seeking tourists or heritage and historical place loving tourists. With the picturesque landscape, rich flora and fauna, monuments and cultural heritage, the south Sikkim can be an enjoyable holiday trip as well as awakening and reviving trip with the inner peace. Numerous diverse tourist destinations in South Sikkim consist of Namchi, Ravangla, Sikip, Jorethang, Temi Tea Garden, etc.
+                </p>
+				<img class="img-fluid" src="https://www.sikkimtourismindia.com/img/south-sikkim.jpg"><br><br>
+    </div>
+
+            <div class="col-md-4 text-center" style="font-weight: 900;">
+                <div class="form">
+                    <b>
+                    <h1><u>Enquiry Form</u></h1>
+                    <form name="myform" id="registrationform" autocomplete="off" onsubmit="return registrationfrom();">
+                        <input type="text" id="name" placeholder="Name"><br><br>
+                        <input type="email" id="email" placeholder="Email"><br><br>
+                        <input type="text" id="number" maxlength="10" placeholder="Mobile"><br><br>
+                        <textarea type="text" id="enquiry" rows="5" placeholder="Post your query"></textarea><br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type ="submit" class = "btn btn-primary">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    </b>
+                </div>
+            </div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="header1"><b>Namchi :</b></p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="body2">
+				The small and outstandingly beautiful city of Namchi is the main city of south Sikkim and also is the administrative headquarter of the South Sikkim district. The town of Namchi is located at the height of 5500 feet from the sea level and at the distance of 100 km from the Gangtok, the capital city of Sikkim and around 110 km from the Siliguri, the nearest commercially famous town in West Bengal. Due to the plenty of monasteries, stupas and religious centers located in the Namchi, the South Sikkim is the hub for the spirituality and religious activities and devotees visit the Namchi city for the inner peace and spiritual awakening. Nowadays, the Namchi has gained a lot of popularity as the prominent tourist destinations as well. Surrounded by the lush green forests, beautiful valleys, pristine river and magnificent hills, this small but amazingly beautiful and tranquil town is the perfect vacation destination amidst the pristine nature. The famous tourist attractions in the Namchi are Sherdup Choeling Monastery, Dichen Choeling Monastery, Ngadak Monastery, Rock Garden, Padmasambhava statue, Temi Garden, etc.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img class="img-fluid" src="https://www.sikkimtourismindia.com/img/namchi.jpg">
+		</div>
+		<div class="col-md-4">
+			<img class="img-fluid" src="https://www.sikkimtourismindia.com/img/ravangla.jpg">
+		</div>
+		<div class="col-md-4">
+			<img class="img-fluid" src="https://www.tourmyindia.com/blog//wp-content/uploads/2016/03/namchi-sikkim.jpg" style="height:100%"><br><br>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="header2"><b>Ravangla :</b></p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="body3">
+				A small, beautiful and quiet town in South Sikkim, the Ravangla is a prominent tourist destination with a magnificent sight of majestic hills adorned with the dense green forest, mesmerizing scene of valleys dotted with the quaint village huts. The city of Ravangla is located at the bottom of the Menam hill at the altitude of 7000 ft on the peripheral landscape that divides the Teesta valley and Rangit valley. The mesmerizing scenery of the snow-clad mountain peaks is the prime attraction of this small tourism hermitage of Ravangla. The breathtaking view of the Kanchenjungha and other peaks such as Pandim, Sinialchu, Kabru, etc. will mesmerize you with its pure natural beauty. The abundance of the diverse natural beauty such as the richness of the exotic flora and fauna, dense green forest, serene snow peaks, pristine waterfalls, large tea gardens, etc., along with the ethnic culture and traditions of the quaint and peaceful villages, old monasteries and the breath of the pure air all together are enriching the landscape of Ravangla and attracting the tourists from all over the world.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="header3"><b>Siddheshwara Dham :</b></p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="body4">
+				The Siddheshwara Dham is the prime pilgrim destination in the south Sikkim, which has been recently developed by the Sikkim Government to promote the religious tourism and village tourism in the state. It is a big temple complex spread in the area of 7 acres around 5 km away from the nearest city of Namchi in South Sikkim. The temple complex is situated on the top of the Solophok hills and is the prime tourist attraction for the religious importance and the natural beauty. The temple has a 108 ft tall Lord Shiva statue, 18 ft tall statue of Lord Kirateshwar, twelve jyotirlingas replicas as well as the replicas of the four famous temples of the Chardham – Badrinath, Dwarka, Jagannath and Rameswaram. There are enough accommodation and food facilities available here for the tourists.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img class="img-fluid1"alt="Responsive-image" src="https://www.sikkimtourismindia.com/img/temi-tea.jpg" style="width:100%">
+		</div>
+		<div class="col-md-4">
+			<img class="img-fluid1"alt="Responsive-image" src="https://www.sikkimtourismindia.com/img/pemayangste.jpg" style="width:100%">
+		</div>
+		<div class="col-md-4">
+			<img class="img-fluid1" alt="Responsive-image" src="https://cdn.s3waas.gov.in/s38757150decbd89b0f5442ca3db4d0e0e/uploads/2018/07/2018072799-1024x682.jpg" style="width : 100%;"><br><br>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="header3"><b>Temi Tea Garden :</b></p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="body4">
+				This is the only tea estate that exists in the State of Sikkim which produces the international standard tea, which has very high demand in the international market. The tea estate is located on the slope of the Tendong Hill and spreads in the large area offering the splendid picture-perfect view of the surroundings and the small villages nearby. Tourists can visit this tea garden and also watch the tea processing methods which will be an enriching experience. There is an old Dak-Bungalow situated below the slope of the tea garden at the foothill where tourist can spend a night for a memorable quaint experience of the British era living. In order to visit the Tea Garden, you have to trek on the way to the Tendong Hill and get the sight of the amazing natural surroundings and feel as the part of the Mother Nature.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="img-fluid1" alt="Responsive-image" src="https://cdn.s3waas.gov.in/s38757150decbd89b0f5442ca3db4d0e0e/uploads/2017/06/2018081453-1024x681.jpg" style="width: 100%">
+            <br><br>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="header3"><b>Pemayangste Monastery :</b></p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="body4">
+				 Apart from the few above destinations, there are many other tourist destinations and attractions in the South Sikkim which make it an ideal place for the adventure seekers, nature-lovers and religious minded tourists. You can indulge in the adventure activities of trekking, angling, rafting and camping along with the wildlife sighting. Visit the South Sikkim and get recharged and rejuvenated with the complete peace of the mind and body.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-12 about">
+			Sikkim Travel Information at a Glance
+			</div>
+		</div>
+	</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p class="body5">
+				 Here you can find the reliable information on how to plan hassle holiday plant to Sikkim. Sikkim Tourism India put together for tourists relevant details like how to reach Sikkim, best time to visit along with complete information on different means of transportation. You can also explore here the different tourist attractions and spots in Sikkim with the help of our navigation map.
+			</p>
+		</div>
+	</div>
+</div>
+
+	  
+<footer class="page-footer font-small unique-color-dark bg-dark">
+            
+                    <div style="background-color: #6351ce;">
+                      <div class="container">
+                  
+                        <div class="row py-4 d-flex align-items-center">
+                  
+                          
+                          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0">Get connected with us on social networks!</h6>
+                          </div>
+                        
+                          
+                          <div class="col-md-6 col-lg-7 text-center text-md-right">
+                  
+                          </div>      
+                  
+                        </div>
+                  
+                      </div>
+                    </div>
+                  
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+                  
+                      <!-- Grid row -->
+                      <div class="row mt-3">
+                  
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-primary">
+                  
+                          <!-- Content -->
+                          <h6 class="text-uppercase font-weight-bold" style="font-weight: 900; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                          ">Sikkim</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipisicing elit.</p>
+                  
+                        </div>
+                       
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                         
+                          <h6 class="text-uppercase font-weight-bold">Products</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                          <p>
+                            <a href="https://www.facebook.com/">
+                                <img src="facebook.jpg.png" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://www.instagram.com/">
+                                <img src="instagram.jpg" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://twitter.com/">
+                                <img src="twitter.jpg" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://www.linkedin.com/">
+                                <img src="linkedin.jpg" class="rounded mx-auto d-block" alt="..." style="width: 40px;">
+                            </a>
+                          </p>
+                  
+                        </div>
+                        
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                          <p>
+                            <a href="https://facebook.com">Your Tour</a>
+                          </p>
+                          
+                          <p>
+                            <a href="#!">Tour Rates</a>
+                          </p>
+                          <p>
+                            <a href="#!">Help</a>
+                          </p>
+                  
+                        </div>
+                       
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-success">
+                  
+                         
+                          <h6 class="text-uppercase " style="font-weight: 900; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                          ">Contact-Us</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;
+                          ">
+                          <p>
+                            <i class="fas fa-home mr-3"></i> 742 Evergreen Terrace (The Simpsons) 16 7.
+                        </p>
+                          <p>
+                            <i class="fas fa-envelope mr-3"></i>245 East 73rd Street (Six and the City) 4 4. ...
+                        </p>
+                          <p>
+                            <i class="fas fa-phone mr-3"></i> + 91 234 567 88</p>
+                          <p>
+                            <i class="fas fa-print mr-3"></i> + 91 234 567 89</p>
+                  
+                        </div>
+                       
+                  
+                      </div>
+                   
+                  
+                    </div>
+                    <!-- Footer Links -->
+                  
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright : 
+                      <a href="https://Sikim.com"> https://Sikkim.com</a>
+                    </div>
+                    <!-- Copyright -->
+                  
+                  </footer>
+            
+            
+            
+            
+                  
+                <!-- Optional JavaScript; choose one of the two! -->
+            
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                -->
+                <script src="js/bootstrap.min.js"></script>
+              </body>
+            </html>
